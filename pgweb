@@ -1,0 +1,6 @@
+
+wget https://github.com/sosedoff/pgweb/releases/download/v0.11.6/pgweb_linux_amd64.zip &&\
+unzip pgweb_linux_amd64.zip && \
+rm pgweb_linux_amd64.zip
+
+export -n PGHOSTADDR && ./pgweb_linux_amd64 --url=postgres://gitpod:@127.0.0.1/postgres?sslmode=disable
